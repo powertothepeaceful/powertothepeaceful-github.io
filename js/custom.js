@@ -23,53 +23,47 @@ var ShoppingCart = (function($) {
   var products = [
     {
       id: 0,
-      name: "ring1",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
+      name: "Warrior Ring",
+      description: "This ring features a warrior pattern to keep your soul strong in the world.",
       imageUrl: "images/ring1.jpg",
-      price: 799
+      price: 80
     },
     {
       id: 1,
-      name: "ring2",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
+      name: "Warrior Duo Set",
+      description: "Two rings are always better than one and will double your inner strength.",
       imageUrl: "images/ring2.jpg",
-      price: 349,
+      price: 90,
     },
     {
       id: 2,
-      name: "ring3",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
+      name: "Open Ring",
+      description: "This ring enhances unconditional love, unity and of course friendship.",
       imageUrl: "images/ring3.jpg",
-      price: 1499
+      price: 45
     },
     {
       id: 3,
-      name: "ring4",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
+      name: "Courage Ring",
+      description: "This ring features a stone of courage. Its calming energies reduce stress and quiet the mind.",
       imageUrl: "images/ring4.jpg",
-      price: 999
+      price: 165
     },
     {
       id: 4,
-      name: "ring5",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
+      name: "Love Ring",
+      description: "This ring stimulates the heart chakra and has a healing effect on the emotions of the heart.",
       imageUrl: "images/ring5.jpg",
-      price: 599
+      price: 180
     },
     {
       id: 5,
-      name: "ring6",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
+      name: "Open Soul Ring",
+      description: "This ring is used to enhance spiritual communication blocks and can assist in aligning the chakras.",
       imageUrl: "images/ring6.jpg",
-      price: 499
+      price: 195
     },
-    {
-         id: 6,
-      name: "ring6",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-      imageUrl: "images/ring6.jpg",
-      price: 499
-    }
+  
 
 
  	
@@ -84,9 +78,9 @@ var ShoppingCart = (function($) {
 	  productEl.innerHTML = `<div class="product-image">
 	                             <img src="${item.imageUrl}" alt="${item.name}">
 	                         </div>
-                             <div class="product-name"><span>Product:</span> ${item.name}</div>
-                             <div class="product-description"><span>Description:</span> ${item.description}</div>
-                             <div class="product-price"><span>Price:</span> ${item.price} $</div>
+                             <div class="product-name"><span></span> ${item.name}</div>
+                             <div class="product-description"><span></span> ${item.description}</div>
+                             <div class="product-price"><span>$</span>${item.price}</div>
                              <div class="product-add-to-cart">
                                <a href="#0" class="button add-to-cart" data-id=${item.id}>Add to Cart</a>
                              </div>
@@ -102,53 +96,25 @@ productsEl.appendChild(productEl);
   var products2 = [
     {
       id: 0,
-      name: "ring1",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-      imageUrl: "images/ring1.jpg",
-      price: 799
+      name: "Eagle of Justice",
+      description: "The Eagle will keep you safe and will help you forge your own path in the world.",
+      imageUrl: "images/pendant1.jpg",
+      price: 85
     },
     {
       id: 1,
-      name: "ring2",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-      imageUrl: "images/ring2.jpg",
-      price: 349,
+      name: "Love Letter Pendant",
+      description: "This pendant has the ability to draw love into your life. It akso strengthens your intuition.",
+      imageUrl: "images/pendant2.jpg",
+      price: 75,
     },
     {
       id: 2,
-      name: "ring3",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-      imageUrl: "images/ring3.jpg",
-      price: 1499
+      name: "Anchor of Your Soul Pendant",
+      description: "This is an anchor of serenity. It is calming and soothing and can be used to heal ailments.",
+      imageUrl: "images/pendant3.jpg",
+      price: 120
     },
-    {
-      id: 3,
-      name: "ring4",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-      imageUrl: "images/ring4.jpg",
-      price: 999
-    },
-    {
-      id: 4,
-      name: "ring5",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-      imageUrl: "images/ring5.jpg",
-      price: 599
-    },
-    {
-      id: 5,
-      name: "ring6",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-      imageUrl: "images/ring6.jpg",
-      price: 499
-    },
-    {
-         id: 6,
-      name: "ring6",
-      description: "Kogi skateboard tattooed, whatever portland fingerstache coloring book mlkshk leggings flannel dreamcatcher.",
-      imageUrl: "images/ring6.jpg",
-      price: 499
-    }
 
 
  	
@@ -163,9 +129,9 @@ productsEl.appendChild(productEl);
 	  productEl2e.innerHTML = `<div class="product-image">
 	                             <img src="${item.imageUrl}" alt="${item.name}">
 	                         </div>
-                             <div class="product-name"><span>Product:</span> ${item.name}</div>
-                             <div class="product-description"><span>Description:</span> ${item.description}</div>
-                             <div class="product-price"><span>Price:</span> ${item.price} $</div>
+                             <div class="product-name"><span></span> ${item.name}</div>
+                             <div class="product-description"><span></span> ${item.description}</div>
+                             <div class="product-price"><span>$</span>${item.price}</div>
                              <div class="product-add-to-cart">
                                <a href="#0" class="button add-to-cart" data-id=${item.id}>Add to Cart</a>
                              </div>
@@ -185,7 +151,7 @@ productsEl2.appendChild(productEl2e);
     
     productsInCart.forEach(function(item) {
       var li = document.createElement("li");
-      li.innerHTML = `${item.quantity} ${item.product.name} - $${item.product.price * item.quantity}`;
+      li.innerHTML = `${item.quantity} ${item.product.name}: $${item.product.price * item.quantity}`;
       cartEl.appendChild(li);
     });
     
@@ -281,3 +247,36 @@ productsEl2.appendChild(productEl2e);
 })(jQuery);
 
 ShoppingCart.init();
+
+
+
+
+var isOpened = true;
+
+$(".tab").click(function(){
+  console.log("test");
+  if (isOpened == true){
+    $(".shopping-cart").addClass("shopping-cart-closed");
+    isOpened = false;
+  }else if (isOpened == false){
+    $(".shopping-cart").removeClass("shopping-cart-closed");
+    isOpened = true;
+  }
+});
+
+
+$('#monitor').html($(window).width());
+
+    $(window).resize(function() {
+    var viewportWidth = $(window).width();
+$('#monitor').html(viewportWidth);
+});
+var myTimeline = new TimelineMax();
+
+myTimeline
+.staggerFrom('h1', 1, {opacity:0, transform:"TranslateX(200px)", ease: Sine.easeOut }, 1)
+.to('h1', 0.6, {color:'white'}, '-=0.6')
+;
+
+
+

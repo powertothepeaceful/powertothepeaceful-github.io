@@ -170,11 +170,16 @@ img {
 	font-family: 'Lora', serif;
 	font-size: 30px;
 	color: white;
+	transition: all 1s ease-out;
 	}
 
 
 .product-nav h3 {
 	padding-top: 70px;
+}
+
+.product-nav #earrings-button h3 {
+	padding-top: 50px;
 }
 
 #pendant-button {
@@ -266,7 +271,7 @@ img {
     padding-top: 15px;
 	}
 
-.product-button {
+	.product-button {
 	margin-bottom: 5px;
 	}
 }
@@ -909,3 +914,25 @@ button .add-to-cart {
 }
 
 /*<----Shopping Cart Ends ----->*/
+
+
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+}
+
+.about a.anchor {
+    display: block;
+    position: relative;
+    top: -105px;
+    visibility: hidden;
+}
+.form-container a.anchor {
+    display: block;
+    position: relative;
+    top: 0px;
+    visibility: hidden;
+}
